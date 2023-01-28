@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
     environment {
@@ -29,7 +28,7 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 withCredentials([
-                    usernamePassword(credentails: 'server-credentials',usernameVaiable: USER, passwordVariable: PWD)
+                    usernamePassword(credentials: 'server-credentials',usernameVariable: 'USER', passwordVariable: 'PWD')
                 ])
                 echo "deploying with ${SERVER_CREDENTIALS}"
                 sh "some script ${USER} ${PWD}" 
