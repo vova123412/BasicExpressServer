@@ -12,11 +12,6 @@ pipeline {
             }
         }
         stage('Test') {
-            when {
-                expression {
-                    BRANCH_NAME == 'basicserver'
-                 }
-                }
             steps {
                  echo "building version ${NEW_VERSION} after expression"
                  echo 'Testing...'
