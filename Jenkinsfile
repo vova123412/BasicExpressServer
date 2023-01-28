@@ -17,7 +17,9 @@ pipeline {
                 expression {
                     BRANCH_NAME == 'basicserver'
                 }
-                echo "building version ${NEW_VERSION}"
+                step {
+                     echo "building version ${NEW_VERSION} after expression"
+                }
                 
                 }
             steps {
