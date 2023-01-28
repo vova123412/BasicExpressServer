@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+node_modules
+
+.DS_Store
+
+.idea/*
+=======
 # Logs
 logs
 *.log
@@ -102,3 +109,4 @@ dist
 
 # TernJS port file
 .tern-port
+>>>>>>> 301ee39e2cf6c79b4053f05782bcbf787666fecb
