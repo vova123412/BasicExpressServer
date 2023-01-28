@@ -1,7 +1,7 @@
 
 pipeline {
     agent any
-    environmet {
+    environment {
         NEW_VERSION ='1.0'
         SERVER_CREDENTIALS = credentials('server-credentials')
     }
@@ -36,8 +36,8 @@ pipeline {
         }
     }
     post {
-        always {
-            // always do this no metter what success or fail
+        always  {
+             echo "Cleaning up resources"
         }
         success{
             echo " sucess"
