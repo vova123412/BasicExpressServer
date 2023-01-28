@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## demo app - developing with Docker
 
 This demo app shows a simple user profile app set up using 
@@ -68,3 +69,6 @@ Step 5: access the nodejs application from browser
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
+=======
+# BasicExpressServer
+>>>>>>> 301ee39e2cf6c79b4053f05782bcbf787666fecb
