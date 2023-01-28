@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 echo "deploying with ${SERVER_CREDENTIALS}"
-                bat "some script ${USER} ${PWD}" 
+                bat "docker ps -all" 
             }
         }
     }
