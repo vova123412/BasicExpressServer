@@ -17,11 +17,7 @@ pipeline {
                     BRANCH_NAME == 'basicserver'
                  }
                 }
-            steps {
-                 echo "building version ${NEW_VERSION} after expression"
-                }
-            steps {
-                echo 'Testing...'
+
             }
         }
         stage('Deploy') {
@@ -33,6 +29,11 @@ pipeline {
                 echo "deploying with ${SERVER_CREDENTIALS}"
                 sh "some script ${USER} ${PWD}" 
             }
+            steps {
+                 echo "building version ${NEW_VERSION} after expression"
+                }
+            steps {
+                echo 'Testing...'
         }
     }
     post {
