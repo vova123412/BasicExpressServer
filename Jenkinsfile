@@ -16,11 +16,10 @@ pipeline {
             when {
                 expression {
                     BRANCH_NAME == 'basicserver'
+                 }
                 }
-                steps {
-                     echo "building version ${NEW_VERSION} after expression"
-                }
-                
+            steps {
+                 echo "building version ${NEW_VERSION} after expression"
                 }
             steps {
                 echo 'Testing...'
