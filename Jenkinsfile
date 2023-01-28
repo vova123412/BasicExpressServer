@@ -10,8 +10,10 @@ pipeline {
         stage('Build') {
             steps {
                 git branch: 'basicserver', url: 'https://github.com/vova123412/BasicExpressServer.git'
-                bat "cd ./app/app"
-                bat "npm install"
+                bat """
+                    cd app/app
+                    npm install
+                 """.stripIndent().trim()
                 echo 'Building...'
             }
         }
